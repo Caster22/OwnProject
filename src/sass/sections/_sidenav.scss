@@ -1,0 +1,95 @@
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+
+  &__logo-container {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__logo {
+    color: $color-light;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: $font-logo;
+  }
+
+  &__logo-text{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 25px;
+  }
+
+  &__bar-container{
+    padding-bottom: 30px;
+    border-bottom: 1px $color-light solid;
+  }
+
+  &__bar{
+    padding: 15px 0px 15px 15px;
+    position: relative;
+
+    &::before{
+      content: '|';
+      position: absolute;
+      color: transparent;
+      background-color: $color-main;
+      height: 50px;
+      width: 5px;
+      left: 0%;
+      top: 0%;
+      font-size: 15px;
+      vertical-align: center;
+      visibility: hidden;
+    }
+
+    &:hover {
+      background-color: lighten(#111, 10%);
+
+      &:before{
+        visibility: visible;
+      }
+    }
+  }
+
+  &__links {
+    color: $color-light;
+    text-decoration: none;
+    font-family: $paragraph-font;
+    font-size: 20px;
+  }
+
+  &__links-icon {
+    margin-top: 3px;
+    margin-right: 10px;
+    vertical-align: center;
+    filter: brightness(0) invert(1);
+    max-height: 15px;
+    max-width: 20px;
+    float: left;
+  }
+
+  &__links-text {
+    vertical-align: center;
+    display: inline;
+  }
+
+  &__chat{
+    padding: 15px;
+    padding-right: 0;
+  }
+
+  &__chat-text{
+    color: $color-light;
+    font-family: $paragraph-font;
+    text-transform: uppercase;
+    padding-left: 5px;
+    font-size: 15px;
+  }
+}

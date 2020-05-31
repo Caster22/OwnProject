@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "normalize";
+@import "globals";
 @import "layout";
 
 /* Components */
@@ -8,10 +9,7 @@
 
 /* Sections */
 @import "components/registration_form";
+@import "sections/sidenav";
 
 /* Pages / Views */
 @import "pages/registration";
-
-h1 {
-  color: red;
-}
