@@ -1,0 +1,73 @@
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.menu {
+  background-color: $color-light;
+  height: 60px;
+  margin-left: 250px;
+
+  &__link {
+    float: right;
+    text-decoration: none;
+    color: #53a6c6;
+    font-size: 15px;
+    border-left: $border;
+
+
+    &-text {
+      display: inline-block;
+      margin-top: 20px;
+      margin-right: 20px;
+      font-family: $paragraph-font;
+    }
+
+    &-icon {
+      margin: 20px 15px 20px 20px;
+      display: inline-block;
+      float: left;
+    }
+  }
+
+  &__exit {
+    vertical-align: middle;
+    padding: 20px;
+    border-left: $border;
+    float: right;
+  }
+
+  &__notification {
+    float: right;
+    padding: 20px;
+    border-left: $border;
+  }
+
+  &__wallet {
+    float: right;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: $paragraph-font;
+    border-left: $border;
+
+    &-icon1 {
+      float: left;
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    &-text {
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    &-icon2 {
+      float: right;
+      display: inline-block;
+      margin: 25px 20px 15px 25px;
+      height: 10px;
+    }
+  }
+}

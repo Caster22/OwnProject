@@ -5,6 +5,10 @@ $brand-main-color: #ff0000;
 $color-main: #fc9000;
 
 $color-light: white;
+$color-dark: black;
+
+
+$border: 2px solid darken($color-light, 15%);
 
 /* Font sizes */
 $paragraph-font-size: 16px;
@@ -13,3 +17,7 @@ $paragraph-font-size: 16px;
 $brand-font: "Open Sans", Helvetica, Arial;
 $paragraph-font: "Open Sans", Helvetica, Arial;
 $font-logo: 'Merienda', cursive,  Helvetica, Arial;
+
+/* Animations */
+
+$transition: all .5s;

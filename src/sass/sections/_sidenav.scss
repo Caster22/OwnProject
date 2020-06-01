@@ -1,11 +1,11 @@
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: lighten($color-dark, 10%);
   overflow-x: hidden;
 
   &__logo-container {
@@ -18,10 +18,19 @@
     font-size: 25px;
     text-decoration: none;
     font-family: $font-logo;
+
+    &:hover .sidenav__logo-text {
+      color: $color-main;
+      transition: $transition;
+    }
   }
 
-  &__logo-text{
-    padding-left: 20px;
+  &__logo-text {
+    transition: $transition;
+  }
+
+  &__logo-menu {
+    padding-left: 60px;
     padding-top: 10px;
     font-size: 25px;
   }
