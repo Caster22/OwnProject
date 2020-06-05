@@ -4,3 +4,11 @@
   display: block;
   cursor: pointer;
 }
+
+.btn{
+  background-color: $color-main;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  border: none;
+}
