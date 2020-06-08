@@ -14,7 +14,12 @@ header {
     color: #53a6c6;
     font-size: 15px;
     border-left: $border;
+    transition: $transition;
 
+    &:hover {
+      background-color: lighten(lightgray, 10%);
+      transition: $transition;
+    }
 
     &-text {
       display: inline-block;
@@ -35,12 +40,24 @@ header {
     padding: 20px;
     border-left: $border;
     float: right;
+    transition: $transition;
+
+    &:hover {
+      background-color: lighten(lightgray, 10%);
+      transition: $transition;
+    }
   }
 
   &__notification {
     float: right;
     padding: 20px;
     border-left: $border;
+    transition: $transition;
+
+    &:hover {
+      background-color: lighten(lightgray, 10%);
+      transition: $transition;
+    }
   }
 
   &__wallet {
@@ -49,6 +66,12 @@ header {
     font-weight: bolder;
     font-family: $paragraph-font;
     border-left: $border;
+    transition: $transition;
+
+    &:hover {
+      background-color: lighten(lightgray, 10%);
+      transition: $transition;
+    }
 
     &-icon1 {
       float: left;

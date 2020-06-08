@@ -18,8 +18,10 @@
     font-size: 25px;
     text-decoration: none;
     font-family: $font-logo;
+    transition: $transition;
 
     &:hover .sidenav__logo-text {
+      transition: $transition;
       color: $color-main;
       transition: $transition;
     }
@@ -43,6 +45,7 @@
   &__bar{
     padding: 15px 0px 15px 15px;
     position: relative;
+    transition: $transition;
 
     &::before{
       content: '|';
@@ -59,10 +62,16 @@
     }
 
     &:hover {
+      color: $color-main;
       background-color: lighten(#111, 10%);
 
       &:before{
         visibility: visible;
+      }
+
+      .sidenav__links-text {
+        transition: $transition;
+        color: $color-main;
       }
     }
   }

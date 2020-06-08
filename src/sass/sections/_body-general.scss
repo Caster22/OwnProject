@@ -34,6 +34,12 @@
   &__btn-date {
     margin-left: 20px;
     padding-left: 10px;
+    transition: $transition;
+
+    &:hover {
+      transition: $transition;
+      background-color: darken($color-main, 10%);
+    }
   }
 
   &__icon-date{
@@ -169,5 +175,76 @@
     color: white;
     font-size: 16px;
     font-family: $paragraph-font;
+    transition: $transition;
+
+    &:hover {
+      background-color: darken($color-main, 10%);
+      transition: $transition;
+    }
+  }
+
+  &__list {
+    &-container {
+      width: 650px;
+      margin-right: auto;
+      margin-left: auto;
+      border-top: $border2;
+      border-bottom: $border2;
+    }
+
+    &-link {
+      border-top: $border2;
+      border-bottom: $border2;
+      transition: $transition;
+
+      &:hover {
+        background-color: lighten(lightgray, 10%);
+        transition: $transition;
+
+        .links__list-link-icons {
+          visibility: visible;
+          transition: $transition;
+        }
+      }
+
+      &-name {
+        font-family: $paragraph-font;
+        font-weight: bold;
+        color: #979797;
+        min-width: 250px;
+        display: inline-block;
+        padding-left: 20px;
+      }
+
+      &-href {
+        text-decoration: none;
+        color: #53a6c6;
+        font-family: $paragraph-font;
+        display: inline-block;
+        padding-left: 50px;
+      }
+
+      &-icons {
+        display: inline-block;
+        max-width: 120px;
+        fill: #979797;
+        transform: scale(0.8);
+        float: right;
+        margin-top: 10px;
+        padding-right: 20px;
+        visibility: hidden;
+      }
+
+      &-icon-1 {
+        fill: goldenrod;
+        transform: scale(0.6);
+        display: inline-block;
+        padding-right: 20px;
+      }
+
+      &-icon-2 {
+        display: inline-block;
+      }
+    }
   }
 }
