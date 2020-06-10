@@ -1,0 +1,72 @@
+@media(max-width: 767px) {
+  @include grid('sm');
+
+  body {
+    background-color: #04ae00;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .general {
+    padding-left: 70px;
+    padding-top: 20px;
+  }
+
+  .links {
+    padding-left: 70px;
+  }
+
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+
+  body {
+    background-color: blue;
+  }
+
+  .menu {
+    display: none;
+  }
+
+
+  .general {
+    padding-left: 70px;
+    padding-top: 20px;
+  }
+
+  .links {
+    padding-left: 70px;
+  }
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+
+  body {
+    background-color: indianred;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .general {
+    padding-left: 270px;
+    padding-top: 80px;
+  }
+
+  .links {
+    padding-left: 270px;
+  }
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
+
+  body {
+    background-color: darken($color-light, 15%);
+  }
+}

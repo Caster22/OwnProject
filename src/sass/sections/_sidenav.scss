@@ -147,3 +147,28 @@
     }
   }
 }
+
+.hidden {
+  max-width: 50px;
+
+  .sidenav__logo-container {
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+
+  .sidenav__logo-text {
+    display: none;
+  }
+
+  .sidenav__logo-menu {
+    padding-left: 0;
+  }
+
+  .sidenav__bar-container {
+    display: none;
+  }
+
+  .sidenav__chat-container {
+    display: none;
+  }
+}
