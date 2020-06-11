@@ -8,6 +8,10 @@
   background-color: lighten($color-dark, 10%);
   overflow-x: hidden;
 
+  &__header {
+    display: none;
+  }
+
   &__logo-container {
     padding-left: 20px;
     margin-bottom: 20px;
@@ -169,6 +173,10 @@
   }
 
   .sidenav__chat-container {
+    display: none;
+  }
+
+  .sidenav__header {
     display: none;
   }
 }
