@@ -54,6 +54,7 @@
       width: 80%;
       margin-left: auto;
       margin-right: auto;
+      justify-content: center;
     }
   }
 
@@ -66,6 +67,8 @@
     padding-right: 5px;
     width: 300px;
     border-bottom: $border;
+    margin-left: 10px;
+    margin-right: 10px;
 
     &-text {
       display: inline-block;
@@ -88,7 +91,7 @@
       font-family: $paragraph-font;
       color: #979797;
       font-weight: bold;
-      width: 80%;
+      width: 68%;
     }
 
     &-variables {
@@ -201,6 +204,7 @@
       border-top: $border2;
       border-bottom: $border2;
       transition: $transition;
+
 
       &:hover {
         background-color: lighten(lightgray, 10%);

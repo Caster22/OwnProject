@@ -112,6 +112,7 @@
     }
 
     &__menu-exit {
+      width: 100%;
       border-left: $border2;
       border-right: $border2;
       border-bottom: $border2;
@@ -124,6 +125,7 @@
     }
 
     &__menu-notification {
+      width: 100%;
       border-left: $border2;
       border-right: $border2;
       border-bottom: $border2;
@@ -132,6 +134,7 @@
 
   .row-hover:hover {
     background-color: lighten(#111, 10%);
+    color: $color-main;
   }
 }
 
@@ -200,6 +203,7 @@
     }
 
     &__menu-exit {
+      width: 100%;
       border-left: $border2;
       border-right: $border2;
       border-bottom: $border2;
@@ -212,6 +216,7 @@
     }
 
     &__menu-notification {
+      width: 100%;
       border-left: $border2;
       border-right: $border2;
       border-bottom: $border2;
@@ -220,6 +225,7 @@
 
   .row-hover:hover {
     background-color: lighten(#111, 10%);
+    color: $color-main;
   }
 }
 
