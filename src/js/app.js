@@ -1,8 +1,4 @@
 
-
-
-
-
 {
   const hamburger = document.querySelector('.hamburger');
   const sideMenu = document.querySelector('.sidenav');
@@ -25,7 +21,6 @@
 
 {
   var ctx = document.getElementById('myChart').getContext('2d');
-  console.log(ctx);
 
   // eslint-disable-next-line no-unused-vars,no-undef
   var chart = new Chart(ctx, {
@@ -60,4 +55,48 @@
       }]
     },
   });
+}
+
+{
+  function closeModal() {
+    document.getElementById('overlay').classList.remove('show');
+  }
+
+  document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      closeModal();
+    });
+  });
+
+  document.querySelector('#overlay').addEventListener('click', function(e) {
+    if(e.target === this) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keyup', function(e) {
+    if(e.keyCode === 27) {
+      closeModal();
+    }
+  });
+
+  function openModal(modal) {
+    document.querySelectorAll('#overlay > *').forEach(function(modal) {
+      modal.classList.remove('show');
+    });
+    document.querySelector('#overlay').classList.add('show');
+    document.querySelector(modal).classList.add('show');
+  }
+
+  const logouts = document.querySelectorAll('.menu__exit');
+  console.log(logouts);
+
+  for (let logout of logouts ) {
+    console.log(logout);
+    logout.addEventListener('click', function (e) {
+      e.preventDefault();
+      openModal('#myModal');
+    });
+  }
 }
